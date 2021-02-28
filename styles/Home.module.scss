@@ -1,0 +1,62 @@
+.section {
+  display: flex;
+  height: 100%;
+  max-width: 1264px;
+  margin: 0 auto;
+  padding-top: 5vh;
+}
+.left_sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  height: 200vh;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-width: 0 1px 0 0;
+  .intro_slider {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    flex: 1;
+    .image {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      min-width: 1280px;
+      //   width: 100%;
+      //   img {
+      //     border: 1px solid #333 !important;
+      //   }
+    }
+  }
+  .intro {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex: 2;
+  }
+}
+.right_sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 0 0 24px;
+
+  .links {
+    background-image: url("https://images6.alphacoders.com/784/784070.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex: 2;
+  }
+  .medias {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex: 1;
+  }
+}

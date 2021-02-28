@@ -1,0 +1,28 @@
+.section {
+  display: flex;
+  //   height: 100%;
+  height: 65vh;
+
+  max-width: 1264px;
+  padding-top: 5vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    .inputUsername,
+    .inputPassword {
+      padding: 0.7rem;
+      margin: 0.5rem;
+    }
+    .submit {
+      width: 50%;
+    }
+  }
+}
