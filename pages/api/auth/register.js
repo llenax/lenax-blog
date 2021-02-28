@@ -6,7 +6,7 @@ const bcrypt = require("bcryptjs");
 dbConnect();
 
 const KEY = process.env.JWT_KEY;
-
+console.log(process.env);
 export default async (req, res) => {
   const { username, password } = req.body;
 
