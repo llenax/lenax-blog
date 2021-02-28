@@ -5,7 +5,7 @@ export default function _404() {
     <>
       <h1>404 - Page Not Found</h1>
       <Link href="/">
-        <a>Go back</a>
+        <a>Go back home</a>
       </Link>
     </>
   );
