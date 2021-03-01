@@ -3,23 +3,29 @@ import { useRouter } from "next/router";
 
 export default function Post({ post, posts }) {
   const router = useRouter();
+
+  // console.log(posts);
+
   if (posts === undefined || posts === null) {
     useEffect(() => {
-      return router.push("/login");
+      router.push("/login");
     });
+    return <></>;
   }
 
   const { posts: newposts, name } = JSON.parse(posts);
   if (name === "JsonWebTokenError") {
     useEffect(() => {
-      return router.push("/login");
+      router.push("/login");
     });
+    return <></>;
   }
   const thisPost = newposts?.find((x) => x.title === post);
   if (thisPost === undefined || thisPost === null) {
     useEffect(() => {
-      return router.push("/404");
+      router.push("/404");
     });
+    return <></>;
   }
   return (
     <div>
